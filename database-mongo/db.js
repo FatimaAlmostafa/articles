@@ -19,13 +19,13 @@ db.once('open', function () {
 const articleSchema = mongoose.Schema({
     title : String ,
     content: String,
-    date of publication : Date
+    date : Date
 })
 
 
 const Article = mongoose.model("Article", articleSchema);
 
-module.exports = Article
+module.exports = {articlemodule:Article,db:db}
 
 ///////////////////////////////////////////
 
