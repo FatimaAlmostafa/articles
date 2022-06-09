@@ -19,7 +19,10 @@ db.once('open', function () {
 const articleSchema = mongoose.Schema({
     title : String ,
     content: String,
-    date : Date
+    date :{
+      type: Date,
+      default: Date.now
+    },
 })
 
 
